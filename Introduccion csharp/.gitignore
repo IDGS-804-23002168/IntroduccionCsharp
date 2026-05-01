@@ -1,0 +1,42 @@
+# Carpetas de compilación
+bin/
+obj/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuración local
+*.vs/
+.vs/
+
+# Archivos de paquetes (NuGet)
+packages/
+*.nupkg
+
+# Archivos de logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Publicaciones
+publish/
+
+# Resharper (si lo usas)
+_ReSharper*/
+*.DotSettings.user
+
+# Archivos generados automáticamente
+Generated_Code/
+
+# IIS Express
+.vs/config/applicationhost.config
+
+# Archivos de base de datos locales
+*.mdf
+*.ldf
+
