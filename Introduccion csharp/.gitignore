@@ -11,6 +11,7 @@ obj/
 # Configuración local
 *.vs/
 .vs/
+.vs/
 
 # Archivos de paquetes (NuGet)
 packages/
@@ -40,3 +41,6 @@ Generated_Code/
 *.mdf
 *.ldf
 
+
+bin/
+obj/
