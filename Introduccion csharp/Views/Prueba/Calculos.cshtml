@@ -1,0 +1,222 @@
+﻿@model Introduccion_csharp.Models.OperasBas
+
+@{
+    ViewBag.Title = "Calculos";
+}
+
+<h2>Calculos</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <form method="post">
+                    <label for="Num1">Numero 1: </label>
+                    <input type="text" name="Num1" value="" />
+                    <br />
+                    <label for="Num2">Numero 2: </label>
+                    <input type="text" name="Num2" value="" />
+                    <br />
+                    <input type="submit" value="enviar" />
+
+                </form>
+            </div>
+
+            <div class="col-lg-6">
+                <br />
+                <h1>La suma es: @Html.DisplayFor(model=>model.Res)</h1>
+
+            </div>
+
+        </div>
+    <!--</div>
+
+
+<h2 class="titulo-principal">
+    <i class="bi bi-cpu-fill"></i> Sistema Ultra Avanzado de Cálculos
+</h2>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">-->
+
+        <!-- FORMULARIO -->
+        <!--<div class="col-lg-5 mb-4">
+
+            <div class="card hacker-card shadow-lg border-0">
+
+                <div class="card-body p-5">
+
+                    <h3 class="text-center neon mb-4">
+                        <i class="bi bi-terminal-fill"></i> Panel Matemático
+                    </h3>
+
+                    <p class="text-center text-light mb-4">
+                        Desarrollado con tecnología de última generación por un futuro ingeniero legendario.
+                    </p>
+
+                    <form method="post">
+
+                        <div class="mb-4">
+                            <label class="form-label text-success fw-bold">
+                                <i class="bi bi-123"></i> Número 1
+                            </label>
+
+                            <input type="text"
+                                   name="Num1"
+                                   class="form-control input-hacker"
+                                   placeholder="Ingrese el primer número..." />
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label text-success fw-bold">
+                                <i class="bi bi-123"></i> Número 2
+                            </label>
+
+                            <input type="text"
+                                   name="Num2"
+                                   class="form-control input-hacker"
+                                   placeholder="Ingrese el segundo número..." />
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-hacker">
+                                <i class="bi bi-lightning-charge-fill"></i>
+                                Ejecutar Cálculo
+                            </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>-->
+
+        <!-- RESULTADO -->
+        <!--<div class="col-lg-5">
+
+            <div class="card resultado-card shadow-lg border-0">
+
+                <div class="card-body p-5 text-center">
+
+                    <h3 class="resultado-title">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        Resultado del Sistema
+                    </h3>
+
+                    <div class="resultado-box mt-4">
+                        <h1 class="display-3 fw-bold text-info">
+                            @Html.DisplayFor(model => model.Res)
+                        </h1>
+                    </div>
+
+                    <div class="mt-4">
+                        <p class="mensaje-profe">
+                            <i class="bi bi-stars"></i>
+                            El profesor Cardiel es tan guapo que hasta el código compila más rápido cuando lo revisa.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<style>
+
+    body {
+        background: linear-gradient(135deg, #050505, #0f172a, #020617);
+        min-height: 100vh;
+        color: white;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .titulo-principal {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #00ffff;
+        text-shadow: 0 0 15px cyan;
+    }
+
+    .hacker-card {
+        background: rgba(0,0,0,0.85);
+        border-radius: 25px;
+        backdrop-filter: blur(10px);
+        border: 1px solid #00ffcc;
+    }
+
+    .resultado-card {
+        background: rgba(10,10,10,0.9);
+        border-radius: 25px;
+        border: 1px solid #00bfff;
+    }
+
+    .neon {
+        color: #00ff99;
+        text-shadow: 0 0 10px #00ff99;
+        font-weight: bold;
+    }
+
+    .input-hacker {
+        background-color: #000;
+        border: 2px solid #00ff99;
+        color: #00ff99;
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 1.1rem;
+    }
+
+        .input-hacker:focus {
+            background-color: #000;
+            color: #00ff99;
+            border-color: cyan;
+            box-shadow: 0 0 20px cyan;
+        }
+
+    .btn-hacker {
+        background: linear-gradient(45deg, #00ff99, #00ccff);
+        border: none;
+        color: black;
+        font-weight: bold;
+        padding: 15px;
+        border-radius: 15px;
+        transition: 0.3s;
+        font-size: 1.2rem;
+    }
+
+        .btn-hacker:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffff;
+        }
+
+    .resultado-title {
+        color: #00d9ff;
+        text-shadow: 0 0 10px #00d9ff;
+        font-weight: bold;
+    }
+
+    .resultado-box {
+        background: rgba(0,255,255,0.08);
+        border: 2px solid cyan;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 0 20px cyan;
+    }
+
+    .mensaje-profe {
+        color: #ffccff;
+        font-size: 1.1rem;
+        text-shadow: 0 0 10px #ff66ff;
+    }
+</style>-->
+
+<!-- Bootstrap Icons -->
+<!--<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">-->
+

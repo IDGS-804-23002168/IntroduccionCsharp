@@ -1,0 +1,32 @@
+﻿@model Introduccion_csharp.Models.Multiplicacion
+
+<h2>Multiplicacion usando sumas</h2>
+
+<form method="post">
+
+    <div>
+        <label>Numero A:</label>
+        <input type="number" name="A" value="@Model.A" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Numero B:</label>
+        <input type="number" name="B" value="@Model.B" />
+    </div>
+
+    <br />
+
+    <button type="submit">
+        Calcular
+    </button>
+
+</form>
+
+<br />
+
+@if (Model.Operacion != null)
+{
+    <h3>@Model.Operacion</h3>
+}

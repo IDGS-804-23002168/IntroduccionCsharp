@@ -120,12 +120,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DistanciaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MultiplicacionController.cs" />
     <Compile Include="Controllers\PruebaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Class1.cs" />
+    <Compile Include="Models\DistanciaPuntos.cs" />
+    <Compile Include="Models\Multiplicacion.cs" />
+    <Compile Include="Models\OperasBas.cs" />
     <Compile Include="Models\Pelicula.cs" />
     <Compile Include="Models\Practica1.cs" />
     <Compile Include="Models\Practica2.cs" />
@@ -188,6 +193,10 @@
     <Content Include="Views\Prueba\Contact.cshtml" />
     <Content Include="Views\Prueba\Index.cshtml" />
     <Content Include="Views\Prueba\Suma.cshtml" />
+    <Content Include="Views\Prueba\MuestraPeliculas.cshtml" />
+    <Content Include="Views\Prueba\Calculos.cshtml" />
+    <Content Include="Views\Distancia\CalcularPuntos.cshtml" />
+    <Content Include="Views\Multiplicacion\Multiplicacion.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

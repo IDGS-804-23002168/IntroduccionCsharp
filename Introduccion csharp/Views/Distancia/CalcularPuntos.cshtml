@@ -1,0 +1,46 @@
+@model Introduccion_csharp.Models.DistanciaPuntos
+
+<div class="container mt-5">
+
+    <h2>Calculadora de Distancia</h2>
+
+    <form action="/Distancia/CalcularPuntos" method="post">
+
+        <h4>Punto 1</h4>
+
+        <label>X1</label>
+        <input type="number" name="X1" step="any" class="form-control" />
+
+        <label>Y1</label>
+        <input type="number" name="Y1" step="any" class="form-control" />
+
+        <br />
+
+        <h4>Punto 2</h4>
+
+        <label>X2</label>
+        <input type="number" name="X2" step="any" class="form-control" />
+
+        <label>Y2</label>
+        <input type="number" name="Y2" step="any" class="form-control" />
+
+        <br />
+
+        <button type="submit" class="btn btn-primary">
+            Calcular
+        </button>
+
+    </form>
+
+    @if (Model.Resultado.HasValue)
+    {
+        <div>
+
+            <h3>Resultado:</h3>
+
+            <h2>@Model.Resultado.Value</h2>
+
+        </div>
+    }
+
+</div>
